@@ -65,7 +65,7 @@ import static org.surfnet.oaaas.resource.TokenResource.WWW_AUTHENTICATE;
 @Consumes("application/x-www-form-urlencoded")
 public class RevokeResource implements EnvironmentAware {
 
-  private static final Logger LOG = LoggerFactory.getLogger(VerifyResource.class);
+  private static final Logger LOG = LoggerFactory.getLogger(RevokeResource.class);
 
   private static final ObjectMapper mapper = new ObjectMapperProvider().getContext(ObjectMapper.class);
 

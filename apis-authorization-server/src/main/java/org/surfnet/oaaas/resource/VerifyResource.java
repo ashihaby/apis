@@ -95,7 +95,7 @@ public class VerifyResource implements EnvironmentAware {
       return Response.status(Status.GONE).entity(new VerifyTokenResponse("token_expired")).build();
     }
 
-    final VerifyTokenResponse verifyTokenResponse = new VerifyTokenResponse(token.getClient().getName(),
+    final VerifyTokenResponse verifyTokenResponse = new VerifyTokenResponse(token.getClient().getClientId(),
             token.getScopes(), token.getPrincipal(), token.getExpires());
 
     if (LOG.isDebugEnabled()) {
